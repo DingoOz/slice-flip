@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Slice Flip</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #1d1b2e; overflow: hidden; touch-action: none; user-select: none; }
+  canvas { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: block; }
+  #dbg { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: none; padding: 10px 14px; border-radius: 10px;
+         background: rgba(20,15,40,.85); color: #fff; font: 14px system-ui, sans-serif; }
+  #dbg label { display: grid; grid-template-columns: 60px 180px 48px; align-items: center; gap: 8px; }
+  #dbg code { display: block; margin-top: 6px; font-size: 12px; opacity: .8; user-select: text; }
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="c" aria-label="Slice Flip game. Press Space, click or tap to flip the knife."></canvas>
+<div id="dbg">
+  <b>Camera debug</b> <small>(` to hide)</small>
+  <label>Pitch <input type="range" min="0" max="89" data-k="pitch"><span></span></label>
+  <label>Yaw <input type="range" min="-180" max="180" data-k="yaw"><span></span></label>
+  <label>Zoom <input type="range" min="300" max="1800" step="10" data-k="dist" title="camera distance: lower = closer"><span></span></label>
+  <code></code>
+</div>
+<script src="three.min.js"></script>
+<script src="audio.js"></script>
+<script src="levels.js"></script>
+<script src="game.js"></script>
+<script src="scene.js"></script>
+<script src="fruit.js"></script>
+<script src="render.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>

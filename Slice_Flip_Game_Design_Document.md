@@ -1,6 +1,6 @@
 # Game Design Document: Slice Flip
 
-*(One-tap knife-flipping slicer inspired by Coolmath Games’ Slice Master)*
+*(An original one-tap knife-flipping slicer)*
 
 ## 1. High Concept
 
@@ -17,7 +17,7 @@ Slice Flip is a one-button skill arcade game. A knife automatically travels forw
 ## 3. Target Audience
 
 - Casual players who enjoy one-button games (Drift Boss, Flappy Bird, Stack)
-- Kids and teens (Coolmath-style audience)
+- Kids and teens (casual browser-game audience)
 - Adults who like short “one more run” sessions
 - Players who appreciate tactile feedback and cosmetic collection
 
@@ -166,4 +166,4 @@ Short stages with higher coin density. Successfully clearing one yields 2–4× 
 
 ---
 
-This document captures the exact feel and systems of Coolmath Games’ Slice Master while remaining original in naming, skin list, and presentation. It is ready for prototyping or full production.
+This document describes an original take on the one-button timing genre, with its own name, mechanics mix, skin list, and presentation. It is ready for prototyping or full production.
